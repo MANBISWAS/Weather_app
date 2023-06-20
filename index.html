@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather_M</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <style>
+    #contact {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #777;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.contact-icons a:hover {
+  color: #333;
+}
+
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Weather_M</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            
+              </ul>
+            </li>
+          
+          </ul>
+          <form class="d-flex" role="search">
+            <input  id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+   
+    <h1 class="text-center my-4">Weather for <span id="cityName"></span></h1>
+
+    <div class="container my-4">
+      <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Basic</h4>
+              </div>
+              <div class="card-body">
+               
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Cloud_pct is <span id="cloud_pct" style="text-decoration: underline; color: blueviolet;"></span></li>
+                  <li>Temperature is <span id="temp" style="text-decoration: underline; color: blueviolet;"></span></li>
+                  <li>Humidity is <span id="humidity" style="text-decoration: underline; color: blueviolet;"></span></li>
+                  
+                </ul>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Temp</h4>
+              </div>
+              <div class="card-body">
+              
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Max_temp is <span id="max_temp" style="text-decoration: underline; color: blueviolet;"></span></li>
+                  <li>Min_temp is <span id="min_temp" style="text-decoration: underline; color: blueviolet;"></span></li>
+                  <li>Feels_like <span id="feels_like" style="text-decoration: underline; color: blueviolet;"></span></li>
+                  
+                </ul>
+              
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm ">
+              <div class="card-header py-3 ">
+                <h4 class="my-0 fw-normal">Wind</h4>
+              </div>
+              <div class="card-body">
+                
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Wind_speed is <span id="wind_speed" style="text-decoration: underline; color: blueviolet;"></span></li>
+                  <li>Wind_Degrees is <span id="wind_degrees" style="text-decoration: underline; color: blueviolet;"></span></li>
+                  <li>Sunrise is <span id="sunrise" style="text-decoration: underline; color: blueviolet;"></span></li>
+                  <li>Sunset is <span id="sunset" style="text-decoration: underline; color: blueviolet;"></span></li>
+                 
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+    
+         
+     
+      </main>
+    </div>
+
+
+
+
+
+    <section id="contact">
+      <div class="container-1">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me for any inquiries or collaborations.</p>
+        <div class="contact-icons">
+         
+          <a href="https://www.instagram.com/manishcoder/'" target="_blank" ><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/MANBISWAS" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </section>
+    
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+   <script src="script.js"></script>
+   <script src="https://kit.fontawesome.com/4f517723e6.js" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
